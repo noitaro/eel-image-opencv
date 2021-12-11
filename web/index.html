@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-container>
+                <v-row no-gutters>
+                    <v-col cols="4">
+                        <v-btn class="ma-1" :loading="loading1" :disabled="loading1" color="secondary"
+                            @click="get_img">
+                            画像読み込み
+                        </v-btn>
+                        <v-btn class="ma-1" :loading="loading2" :disabled="loading2" color="secondary"
+                            @click="gray_scale">
+                            グレースケール
+                        </v-btn>
+                    </v-col>
+                </v-row>
+                <v-row no-gutters>
+                    <v-img contain max-height="400" max-width="400" :src="img_src"></v-img>
+                </v-row>
+            </v-container>
+        </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/trading-vue-js@1.0.2/dist/trading-vue.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
