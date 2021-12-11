@@ -8,6 +8,13 @@ import numpy as np
 import io
 from PIL import Image
 
+# pip install Eel==0.14.0
+# pip install opencv-python==4.5.4.60
+# pip install Pillow==8.4.0
+
+# pip freeze > requirements.txt
+# pip install -r requirements.txt
+
 # tkinterの画面を非表示にする
 root = tkinter.Tk()
 root.withdraw()
