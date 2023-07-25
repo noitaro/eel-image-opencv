@@ -6,4 +6,4 @@ pip install opencv-python==4.5.4.60
 pip install Pillow==8.4.0
 ```
 ## WebSite
-https://noitalog.tokyo/eel-image-opencv/
+https://noitaro.github.io/eel-image-opencv/
